@@ -1,0 +1,15 @@
+Algoritmo Sesion3tarea
+	Escribir "Por favor responda con sus datos personales"
+	Escribir "¿Qué edad tiene?"
+	Definir Edad Como Entero
+	Leer Edad
+	Escribir "¿En qué localidad vive?"
+	Definir Localidad Como Caracter
+	Leer Localidad
+	Escribir "¿Tiene síntomas respiratorios?-escriba verdadero o falso"
+	Definir sintomas Como Logico
+	Leer sintomas
+	Escribir "verifique los datos ingresados"
+    Imprimir "Edad: ", Edad ," ,", "Localidad: ", Localidad, ", ", "tiene síntomas respiratorios: ", sintomas
+	
+FinAlgoritmo
