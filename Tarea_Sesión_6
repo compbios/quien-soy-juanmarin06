@@ -1,0 +1,70 @@
+Funcion rsuma <- suma ( n1,n2 )
+	Escribir n1+n2
+Fin Funcion
+
+Funcion rresta <- resta ( n1,n2 )
+	Escribir n1-n2
+Fin Funcion
+
+Funcion rpromedio <- promedio ( n1,n2 )
+	Escribir (n1+n2)/2
+Fin Funcion
+
+Funcion rmin <- minimo ( n1,n2 )
+	Si n1 > n2 Entonces
+		Escribir n2
+	SiNo
+		Escribir n1
+	FinSi
+Fin Funcion
+
+
+Funcion rmax <- maximo ( n1,n2 )
+	Si n1 < n2 Entonces
+		Escribir n2
+	SiNo
+		Escribir n1
+	FinSi
+Fin Funcion
+
+Funcion rde <- dese( n1,n2 )
+	a<- (n1-rpromedio)^2
+	b<- (n2-rpromedio)^2
+	Escribir raiz((a+b)/2)
+Fin Funcion
+
+
+Algoritmo Funciones_A
+	Escribir "Esta calculadora le permite hacer operaciones entre dos números"
+	Escribir "Puede calcular suma, resta, promedio, mínimo, máximo, desviación estándar(de) y mediana"
+	Escribir "Ingrese primer número"
+	Leer n1
+	Escribir "Ingrese segundo número"
+	Leer n2
+	Escribir "que cálculo requiere"
+	Escribir "para suma escriba 1"
+	Escribir "para resta escriba 2"
+	Escribir "para promedio escriba 3"
+	Escribir "para mínimo escriba 4"
+	Escribir "para máximo escriba 5"
+	Escribir "para desviación estándar escriba 6"
+	Escribir "para mediana escriba 7"
+	Repetir
+		Leer req
+		Si req>7 o req<1 Entonces
+			Escribir "escriba un valor válido"
+		FinSi
+	Hasta Que req>=1 y req<=7
+	Segun req Hacer
+		1: Escribir suma(n1,n2)
+		2: Escribir resta(n1,n2)
+		3: Escribir promedio(n1,n2)
+		4: Escribir minimo(n1,n2)
+		5: Escribir maximo(n1,n2)
+		6: Escribir dese(n1,n2)
+		7: Escribir promedio(n1,n2)
+		De otro modo:
+			Escribir "error"
+	FinSegun
+	
+FinAlgoritmo
