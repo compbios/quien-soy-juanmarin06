@@ -1,0 +1,70 @@
+Algoritmo se_reciben_2_números
+	//Se reciben dos números y se reporta cuál es el menor y cuál es el mayor de ellos
+	Escribir "Bienvenid@"
+	Escribir "Se le pedirá que escriba dos números, le diremos cual de ellos es el mayor"
+	Definir numero1 Como Real
+	Definir numero2 Como Real
+	Repetir
+		Escribir "Indique un número"
+		Leer numero1
+		Si numero1 <= 0  Entonces
+			Escribir "Por favor escriba un número real, positivo y diferente de 0"
+		FinSi
+	Hasta Que numero1 > 0
+	Repetir
+		Escribir "Indique otro número"
+		Leer numero2
+		Si numero2 < 0  Entonces
+			Escribir "Por favor escriba un número real, positivo y diferente de 0"
+		FinSi
+	Hasta Que numero2 > 0
+	Si numero1 > numero2
+		Entonces
+		Escribir "De los números ingresados el mayor es: ", numero1
+	SiNo
+		Escribir "De los números ingresados el mayor es: ", numero2
+	FinSi
+FinAlgoritmo
+
+
+//
+//
+Algoritmo sera_vocal_pregunta
+	Escribir "¿Quiere saber si una letra es una vocal?"
+	Escribir "Indique la letra para comprobar"
+	Definir letra Como Caracter
+	Leer letra
+	Si letra = "a" o letra ="e" o letra ="i" o letra = "o" o letra = "u" Entonces
+		Escribir "la letra ingresada SI es una vocal"
+	SiNo
+		Escribir "la letra ingresada NO es una vocal"
+	FinSi
+	//otra opción para hacer lo mismo de arriba, mismo resultado 
+	Segun letra Hacer
+		"a": Escribir "la letra ingresada SI es una vocal"
+		"e": Escribir "la letra ingresada SI es una vocal"
+		"i": Escribir "la letra ingresada SI es una vocal"
+		"o": Escribir "la letra ingresada SI es una vocal"
+		"u": Escribir "la letra ingresada SI es una vocal"
+		De Otro Modo:
+			Escribir "la letra ingresada NO es una vocal"
+	FinSegun
+FinAlgoritmo
+//al escribirse un número en esta variable como caracter ¿cómo puedo indicarle al usuario que ha sido un error?
+
+
+
+///
+//
+Algoritmo factorial_número
+	Escribir "CALCULADORA-NÚMEROS FACTORIALES"
+	Escribir "Indique el número: "
+	Definir num Como entero
+	Leer num 
+	Definir one Como entero
+	one<- 1 
+	Para x<-1 Hasta num con paso 1 Hacer 
+		one<-one*x//porque se guarda sobre la misma variable?
+	FinPara
+	Escribir "El factoral de ", num, " ", "es: ", one
+FinAlgoritmo
