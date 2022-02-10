@@ -11,3 +11,41 @@ Algoritmo promedio
 	FinPara
 	Escribir "promedio"," ", prom/5
 FinAlgoritmo
+
+
+
+Algoritmo libros
+	Escribir "indique el precio del libro"
+	Leer precio
+	Escribir "mes en número correspondiente"
+	Leer mes
+	Segun mes hacer 
+		2: escribir "25% de descuento", "//",  "precio a pagar: ", precio-(precio*0.25)
+		7: Escribir "15% de descueto", " //",  "precio a pagar: ",precio-(precio*0.15)
+		9: Escribir "20% de descuento", "// ", "precio a pagar: ",precio-(precio*0.20)
+		De Otro Modo:
+			Escribir "lo sentimos, no hay descuento"
+	FinSegun
+	
+FinAlgoritmo
+
+Algoritmo bisiesto
+	Definir a Como Entero
+	Escribir "Ingrese el año"
+	Leer a
+	Si (a mod 4 = 0 Y a mod 100 <> 0) O (a mod 100 = 0 Y a mod 400 = 0) Entonces
+		Escribir "Año bisiesto"
+	SiNo
+		Escribir "Año no bisiesto", 100 multiplo 
+	Fin Si
+FinAlgoritmo
+
+
+Algoritmo numero_absoluto 
+	Escribir "indique un número"
+	Leer n 
+	Si n<0 Entonces
+		n= (-1)*n
+	FinSi
+	Escribir n
+FinAlgoritmo
