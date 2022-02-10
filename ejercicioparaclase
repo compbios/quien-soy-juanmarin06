@@ -1,0 +1,13 @@
+Algoritmo promedio
+	Definir num Como Real
+	Dimension num[5]
+	Para z<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir "Ingrese el número ", z
+		Leer num[z]
+	Fin Para
+	prom<-0
+	Para z<-1 Hasta 5 Con Paso 1 Hacer
+		prom<- prom+num[z]
+	FinPara
+	Escribir "promedio"," ", prom/5
+FinAlgoritmo
